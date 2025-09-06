@@ -1,0 +1,133 @@
+*{
+    margin 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ff0000, #020086);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color: rgba(178, 143, 1, 0.844);
+    margin: 10px;
+
+}
+p{
+    margin: 20px;
+    color: rgb(27, 3, 50);
+}
+.desc{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+table caption{
+    font-weight:bold;
+    margin-bottom: 10px;
+    color: rgb(145, 202, 58);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100;
+    background-color: aliceblue;
+    back-shodow: 0 2px 8px red(0, 0, 0, 0.1);
+}
+th, td{
+    border: 1px solid blue;
+    padding: 12px;
+    text-align: center;
+}
+th{
+    background: rgba(80, 225, 158, 0.579);
+    color: rgb(139, 41, 14);
+}
+tr:nth-child(even){
+    background-color: #e8843c;
+
+}
+#registration-form{
+    background-color: white;
+    padding: 24px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shodow: 0 2px 8px blue(0, 0, 0, o.1)
+}
+#registration-form h2{
+    color: azure;
+    margin-bottom: 14px;
+}
+.form-group{
+    display: block;
+    margin-bottom: 14px;
+}
+
+.form-group label{
+    font-weight: bold;
+    margin-top: 4px;
+}
+input, select, textarea{
+    padding: 10px;
+    margin-top: 4px;
+    width: 100%;
+    border: 1px solid rgb(16, 0, 247);
+    bordor-radius: 4px;
+}
+input[type="radio"]
+input[type="chekbox"]{
+width: auto;
+margin-right: 5px;
+}
+
+input[required]{
+    border-left: 10px solid rgb(231, 127, 127);
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border: 10px solid rebeccapurple( 231, 127, 127) ;
+    box-shadow: #cf410d(16, 17, 104, 0.822);
+} 
+
+button{
+    padding: 10px 14px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+}
+button[type="submit"]{
+    background-color: #09ff00;
+}
+button[type="reset"]{
+    background-color: #ff0000;
+}
+button[type="reset"]:hover {
+    background-color: #0d09e9;
+}
+button[type="submit"]:hover {
+    background-color: #0d09e9;
+}
+
+@media (max-width: 900px){
+    .container{
+        grid-template-columns: 3fr;
+    }
+}
